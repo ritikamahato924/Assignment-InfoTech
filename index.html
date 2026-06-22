@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-InfoTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="./images/Logo (2).png" alt="Logo">
+
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Our Services</li>
+            <li>Pricing</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="contact-btn">
+                <img src="./images/Contact-icon.png" alt="">
+                Contact Us
+            </button>
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>
+                Simplifying
+                <span class="compliance">
+                    Compliance
+                    <img src="./images/underline-Vector.png" alt="">
+                </span>
+                For Research Analysts
+            </h2>
+
+            <p>
+                Stay Focused On Your Insights—We’ll Handle The Compliance. Our Expert
+                Solutions Ensure Your Research Practices Meet Every Regulatory
+                Requirement With Confidence And Ease
+            </p>
+
+            <div class="hero-list">
+                <img src="./images/check-sign.png" alt="">
+                <span>End-To-End Compliance Support</span>
+            </div>
+
+            <div class="hero-list">
+                <img src="./images/check-sign.png" alt="">
+                <span>Regulatory Filings Made Simple</span>
+            </div>
+
+            <div class="hero-list">
+                <img src="./images/check-sign.png" alt="">
+                <span>Tailored Solutions For Independent Analysts & Firms</span>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="primary-btn">Get Started</button>
+                <button class="secondary-btn">Book A Consultation</button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img class="banner-image" src="./images/Banner Image.png" alt="Banner Image">
+        </div>
+    </section>
+
+    <section class="compliance-section">
+        <img class="corner-arrow" src="./images/Group.png" alt="">
+
+        <div class="section-heading">
+            <h2>Why <span>Compliance Matters</span><br>For Research Analysts</h2>
+            <p>
+                In Today’s Regulatory Environment, Even A Small Oversight Can Lead To Penalties,
+                Reputational Risks, And Loss Of Client Trust. We Help Research Analysts And Firms
+                Navigate Complex Compliance Requirements So They Can Focus On Delivering
+                High-Quality Research Without Worry.
+            </p>
+        </div>
+
+        <div class="section-content">
+            <img class="curly-arrow" src="./images/Vector2.png" alt="">
+
+            <div class="section-image">
+                <img src="./images/Section2-Image.png" alt="Compliance illustration">
+            </div>
+
+            <div class="cards">
+                <div class="info-card">
+                    <img class="card-icon" src="./images/Regulatory Clarity.png" alt="Image Regulatory Clarity">
+
+                    <div class="card-text">
+                        <h3>Regulatory Clarity</h3>
+                        <p>We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p>
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+                    <img class="card-icon" src="./images/Hassle-Free Filings Clarity.png" alt="Image Hassle-Free">
+
+                    <div class="card-text">
+                        <h3>Hassle-Free Filings Clarity</h3>
+                        <p>From Registration To Ongoing Reporting—We Manage It End-To-End.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img class="card-icon" src="./images/Risk Protection.png" alt="Image Risk Protection">
+
+                    <div class="card-text">
+                        <h3>Risk Protection</h3>
+                        <p>Stay Ahead Of Audits, Inspections, And Compliance Gaps With Proactive Support.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuIcon = document.querySelector(".menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
