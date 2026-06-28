@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   background: #fff;
 }
 
@@ -14,7 +14,7 @@ body {
   max-width: 1440px;
   height: 80px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 50px 0 100px;
 
   display: flex;
   align-items: center;
@@ -22,10 +22,10 @@ body {
   flex-wrap: nowrap;
 }
 
-.nav-right{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .logo {
@@ -51,15 +51,19 @@ body {
   color: #4356d6;
 }
 
+.nav-links li img {
+  display: none;
+}
+
 .contact-btn {
   height: 38px;
   padding: 0 22px;
   border: none;
-  border-radius: 4px;
-  background: #4356d6;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
+  background: transparent;
+  color: #4356d6;
+  border: 2px solid #4356d6;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
 
   display: flex;
@@ -67,12 +71,29 @@ body {
   gap: 8px;
 
   outline: none;
+  border-radius: 8px;
+  position: relative;
 }
 
 .contact-btn img {
   width: 26px;
   height: 26px;
   object-fit: contain;
+  color: #4356d6;
+}
+
+.contact-btn:hover {
+  background: #4356d6;
+  color: #fff;
+}
+
+.contact-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.contact-btn:hover .contact-icon {
+  content: url("./images/Contact-icon.png");
 }
 
 .hero {
@@ -97,7 +118,7 @@ body {
   font-size: 64px;
   line-height: 85px;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   margin-bottom: 24px;
 
@@ -108,20 +129,20 @@ body {
 
 }
 
-.compliance{
-    position: relative;
-    color: #5254CF;
-    display: inline-block;
+.compliance {
+  position: relative;
+  color: #5254CF;
+  display: inline-block;
 }
 
-.compliance img{
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 100%;
+.compliance img {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
 }
 
-.hero-content > p:first-of-type {
+.hero-content>p:first-of-type {
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 22px;
@@ -138,13 +159,13 @@ body {
   width: 100%;
 }
 
-.hero-list img{
+.hero-list img {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-.hero-list span{
+.hero-list span {
   flex: 1;
   text-align: left;
 }
@@ -166,15 +187,25 @@ body {
 }
 
 .primary-btn {
-  background: #4356d6;
-  color: #fff;
-  border: none;
+  background: transparent;
+  color: #4356d6;
+  border: 2px solid #4356d6;
 }
 
 .secondary-btn {
   background: transparent;
   color: #4356d6;
   border: 2px solid #4356d6;
+}
+
+.primary-btn:hover {
+  background: #4356d6;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background: #4356d6;
+  color: #fff;
 }
 
 .hero-image {
@@ -197,13 +228,13 @@ body {
 }
 
 
-.corner-arrow{
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    width: 130px;
-    height:30px;
-    opacity: 100%;
+.corner-arrow {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 130px;
+  height: 30px;
+  opacity: 100%;
 }
 
 .section-heading {
@@ -239,17 +270,17 @@ body {
   position: relative;
 }
 
-.curly-arrow{
-    position: absolute;
-    top: -40px;
-    left: 42%;
-    width: 30px;
-    opacity: .5;
-    transition: .3s;
+.curly-arrow {
+  position: absolute;
+  top: -40px;
+  left: 42%;
+  width: 30px;
+  opacity: .5;
+  transition: .3s;
 }
 
-.curly-arrow:hover{
-    opacity: 1;
+.curly-arrow:hover {
+  opacity: 1;
 }
 
 .section-image {
@@ -281,15 +312,19 @@ body {
   background: #fff;
 }
 
-.card-icon{
+.info-card:hover {
+  border-color: #051AA3;
+}
+
+.card-icon {
   width: 36px;
   height: 36px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
-.card-text h3{
-  font-family: Roboto, sans-serif;
+.card-text h3 {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -297,7 +332,7 @@ body {
   color: #000;
 }
 
-.card-text p{
+.card-text p {
   font-size: 14px;
   line-height: 22px;
   margin: 0;
@@ -311,8 +346,8 @@ body {
   color: #000;
 }
 
-@media (max-width:1100px){
-  .hero-list{
+@media (max-width:1100px) {
+  .hero-list {
     width: max-content;
     max-width: 100%;
     margin-left: auto;
@@ -325,53 +360,86 @@ body {
 @media (max-width: 1280px) {
 
   .navbar {
-    height: 70px;
-    padding: 0 32px;
-  }
-
-  .logo {
-    width: 95px;
+    position: relative;
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 32px;
-    width: 190px;
-    padding: 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 292px;
+    height: 100vh;
+    padding: 90px 22px 0;
     background: #fff;
-    border: 1px solid #e2e2ff;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 
     display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
+    align-items: stretch;
+    gap: 0;
+
     z-index: 999;
   }
 
-  .nav-links.active {
+  .navbar.active .nav-links {
     display: flex;
   }
 
   .nav-links li {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
     font-size: 14px;
+  }
+
+  .nav-links li img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar.active .contact-btn {
+    position: fixed;
+    top: 455px;
+    right: 22px;
+    width: 220px;
+    height: 40px;
+    background: #4356d6;
+    color: #fff;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .navbar.active .contact-btn img {
+    display: none;
   }
 
   .menu-icon {
     display: block;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 1001;
   }
 
-  .contact-btn {
-    height: 34px;
-    padding: 0 16px;
-    font-size: 12px;
+  .navbar.active .menu-icon {
+    position: fixed;
+    top: 28px;
+    right: 24px;
+    color: #4356d6;
+    z-index: 1001;
   }
 
-  .contact-btn img {
-    width: 18px;
-    height: 18px;
+  .navbar.active .menu-icon i::before {
+    content: "\f00d";
+  }
+
+  .navbar.active .logo {
+    position: fixed;
+    top: 24px;
+    right: 210px;
+    width: 80px;
+    z-index: 1001;
   }
 
   .hero {
@@ -396,7 +464,7 @@ body {
     margin-bottom: 18px;
   }
 
-  .hero-content > p:first-of-type {
+  .hero-content>p:first-of-type {
     max-width: 580px;
     font-size: 13px;
     line-height: 1.7;
@@ -516,6 +584,74 @@ body {
 }
 
 @media (max-width: 576px) {
+  .navbar {
+    position: relative;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 290px;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 90px 22px 100px;
+    transition: .3s;
+    z-index: 999;
+  }
+
+  .navbar.active .nav-links {
+    right: 0;
+  }
+
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 58px;
+    list-style: none;
+  }
+
+  .nav-links li img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar.active .contact-btn {
+    display: flex;
+    position: fixed;
+    right: 22px;
+    bottom: 30px;
+    width: 246px;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .navbar.active .logo {
+    position: fixed;
+    top: 30px;
+    z-index: 1000;
+  }
+
   .hero-buttons {
     flex-direction: column;
     align-items: center;
@@ -528,5 +664,19 @@ body {
     max-width: 270px;
     height: 40px;
     font-size: 13px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .nav-links li img {
+    display: block;
+    width: 24px;
+    height: 24px;
   }
 }

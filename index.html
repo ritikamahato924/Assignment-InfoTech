@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,17 +21,17 @@
         <img class="logo" src="./images/Logo (2).png" alt="Logo">
 
         <ul class="nav-links">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Pricing</li>
-            <li>FAQ</li>
-            <li>Contact</li>
+            <li><img src="./images/Home.png" alt="">Home</li>
+            <li><img src="./images/AboutUs.png" alt="">About Us</li>
+            <li><img src="./images/Our Services.png" alt="">Our Services</li>
+            <li><img src="./images/Pricing.png" alt="">Pricing</li>
+            <li><img src="./images/FAQ.png" alt="">FAQ</li>
+            <li><img src="./images/Contact.png" alt="">Contact</li>
         </ul>
 
         <div class="nav-right">
             <button class="contact-btn">
-                <img src="./images/Contact-icon.png" alt="">
+                <img src="./images/Buttons/solar_phone-linear.svg" alt="" class="contact-icon">
                 Contact Us
             </button>
 
@@ -135,10 +139,10 @@
 
     <script>
         const menuIcon = document.querySelector(".menu-icon");
-        const navLinks = document.querySelector(".nav-links");
+        const navbar = document.querySelector(".navbar");
 
         menuIcon.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
+            navbar.classList.toggle("active");
         });
     </script>
 </body>
