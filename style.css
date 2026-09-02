@@ -791,7 +791,6 @@ body {
   .curly-arrow {
     top: 5px;
     right: 18%;
-    left: 580px;
     width: 26px;
     height: 100px;
   }
@@ -802,7 +801,7 @@ body {
 
   .corner-arrow {
     position: absolute;
-    left: 0;
+    left: calc(50% - 360px);
     top: 830px;
     width: 161.52px;
     height: 34.17px;
@@ -1368,7 +1367,7 @@ body {
     position: absolute;
 
     left: 20px;
-    top: 930px;
+    top: clamp(850px, 155vw, 930px);
 
     width: 75px;
     height: 21.15px;
