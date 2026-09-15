@@ -230,7 +230,8 @@ body {
 }
 
 .compliance-section {
-  max-width: 1440px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
   padding: 50px 100px 70px;
   position: relative;
@@ -642,13 +643,14 @@ body {
 
   .navbar.active .nav-links {
     display: flex;
+    gap: 40px;
   }
 
   .nav-links li {
     height: 52px;
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 49px;
     font-size: 14px;
   }
 
@@ -660,12 +662,12 @@ body {
 
   .navbar.active .contact-btn {
     position: fixed;
-    bottom: 270px;
-    right: 22px;
-    width: 220px;
+    bottom: 410px;
+    right: 46px;
+    width: min(220px, calc(100vw - 44px));
     height: 40px;
-    background: #4356d6;
-    color: #fff;
+    background: rgb(67, 86, 214);
+    color: rgb(255, 255, 255);
     justify-content: center;
     z-index: 1000;
   }
@@ -696,7 +698,7 @@ body {
 
   .navbar.active .logo {
     position: fixed;
-    top: 24px;
+    top: 18px;
     right: 210px;
     width: 80px;
     z-index: 1001;
@@ -969,7 +971,7 @@ body {
 
   .navbar.active .menu-icon i::before {
     content: "\f00d";
-    
+
   }
 
   .navbar.active .logo {
@@ -1082,7 +1084,7 @@ body {
     max-width: 100%;
   }
 
-  .hero-content > p:first-of-type {
+  .hero-content>p:first-of-type {
     width: 100%;
     max-width: 588px;
 
